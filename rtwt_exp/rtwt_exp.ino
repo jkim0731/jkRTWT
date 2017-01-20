@@ -97,7 +97,11 @@ void loop() {
       for (i = 0; i < numArray-2; i++) {
         thetaDiff[i] = thetaArray[i+1] - thetaArray[i];
       }
-    }
+    } else {
+      if (trialType > 2) {
+	Serial.println(“NaN”);
+      }
+    }	
   }  
   
   if (state0 == 0) {
